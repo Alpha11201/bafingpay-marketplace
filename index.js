@@ -19,7 +19,7 @@ try {
   // Utilise SUPABASE_KEY (service role) au lieu de SUPABASE_ANON_KEY
   supabase = createClient(
     process.env.SUPABASE_URL || 'https://default.supabase.co',
-    process.env.SUPABASE_KEY || process.env.SUPABASE_ANON_KEY || 'default_key',
+    process.env.SUPABASE_KEY ||  process.env.SUPABASE_KEY || 'default_key',
     { 
       auth: { 
         persistSession: false 
